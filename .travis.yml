@@ -6,4 +6,5 @@ notifications:
 jdk:
 - oraclejdk8
 
-
+after_success:
+  script: mvn -Dverbose package dependency:tree
