@@ -6,4 +6,5 @@ notifications:
 jdk:
 - oraclejdk8
 
-script: mvn -B dependency:tree
+after_success:
+script: bash srj.sh
