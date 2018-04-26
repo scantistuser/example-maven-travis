@@ -7,4 +7,4 @@ jdk:
 - oraclejdk8
 
 after_success:
-script: bash srj.sh
+  - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
