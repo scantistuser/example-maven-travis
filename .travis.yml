@@ -6,6 +6,7 @@ notifications:
 jdk:
 - oraclejdk9
 
+
 after_success:
-#- bash <(curl -s https://scripts.scantist.com/ci-travis.sh)
-- bash <(curl -s https://scripts.scantist.com/staging/ci-travis-jar-k8s.sh)
+- bash <(curl -s https://scripts.scantist.com/ci-travis.sh)
+#- bash <(curl -s https://scripts.scantist.com/staging/ci-travis-jar-k8s.sh)
